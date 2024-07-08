@@ -18,7 +18,10 @@ The goal of this project is to develop a semi-automated system to extract and an
 4. **Plot Statistics:** After exiting the pressure plot, confirm if you want to plot the statistics for the selected intervals.
 5. **Save Intervals:** After exiting the statistics plot, you can choose to save the selected intervals as a JSON file.
 
-![Video Demo](https://github.com/OmerSapir/Analysis-Tool-For-UAV-Measurments/blob/main/Example.mp4)
+<video width="640" height="360" controls>
+  <source src="Example.mp4" type="Example/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Input
 CSV file containing the following columns:
