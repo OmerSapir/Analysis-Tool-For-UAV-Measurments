@@ -6,10 +6,6 @@ Our laboratory researches the chemical and physical properties of various aeroso
 ## Project Goal
 The goal of this project is to develop a semi-automated system to extract and analyze the relevant measured data. Due to the inaccuracy of existing altimeters, the pressure variable is used as an altitude indicator. The system will process the measurement results in the CSV files, construct a pressure profile graph, and identify the straight portions representing the hovering "steps". The system will provide timestamp recommendations for the start and end of each step. Users will be able to select relevant steps, remove unwanted portions from the data, and create a clean correlation graph between pressure and chosen measured variables.
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/OmerSapir/Analysis-Tool-For-UAV-Measurments/blob/main/Example.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ## User Instructions
 1. **Browse and Select CSV File:** Use the GUI to browse and select the CSV file.
@@ -18,10 +14,7 @@ The goal of this project is to develop a semi-automated system to extract and an
 4. **Plot Statistics:** After exiting the pressure plot, confirm if you want to plot the statistics for the selected intervals.
 5. **Save Intervals:** After exiting the statistics plot, you can choose to save the selected intervals as a JSON file.
 
-<video width="640" height="360" controls>
-  <source src="Example.mp4" type="Example/mp4">
-  Your browser does not support the video tag.
-</video>
+![Demo Video](https://github.com/OmerSapir/Analysis-Tool-For-UAV-Measurments/blob/main/Example.mp4)
 
 ## Input
 CSV file containing the following columns:
