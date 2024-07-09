@@ -11,12 +11,6 @@ Our laboratory researches the chemical and physical properties of various aeroso
 ## Project Goal
 The goal of this project is to develop a semi-automated system to extract and analyze the relevant measured data. Due to the inaccuracy of existing altimeters, the pressure variable is used as an altitude indicator. The system will process the measurement results in the CSV files, construct a pressure profile graph, and identify the straight portions representing the hovering "steps". The system will provide timestamp recommendations for the start and end of each step. Users will be able to select relevant steps, remove unwanted portions from the data, and create a clean correlation graph between pressure and chosen measured variables.
 
-## Input
-CSV file containing the following columns:
-- Timestamp
-- Pressure
-- Measurable atmospheric composition parameters
-
 ## User Instructions
 1. **Browse and Select CSV File:** Use the GUI to browse and select the CSV file containing your measurement data.
 2. **Specify Parameters:**
@@ -31,6 +25,7 @@ CSV file containing the following columns:
 6. **Save Intervals:** After exiting the statistics plot, you can choose to save the selected intervals as a JSON file.
 
 ## Usage Example (for 'example_CSV' in 'Data' file):
+- CSV File: example_CSV.csv (CSV file containing timestamp, pressure, and atmospheric composition columns)
 - Index Column: timestamp
 - Steps Analysis Column: hum_pressure
 - Measured Stats Column: pom_ozone
