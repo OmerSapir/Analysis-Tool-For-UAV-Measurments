@@ -26,11 +26,11 @@ The goal of this project is to develop a semi-automated system to extract and an
 6. **Save Intervals:** After exiting the statistics plot, you can choose to save the selected intervals as a JSON file.
 
 # Usage Example (for 'example_CSV' in 'Data' file):
-Index Column: timestamp
-Steps Analysis Column: hum_pressure
-Measured Stats Column: pom_ozone
-Steps Size: 35
-Variance Threshold: 70
+- Index Column: timestamp
+- Steps Analysis Column: hum_pressure
+- Measured Stats Column: pom_ozone
+- Steps Size: 35
+- Variance Threshold: 70
 
 ![Download Video Demo](https://github.com/OmerSapir/Analysis-Tool-For-UAV-Measurments/blob/main/Example.mp4)
 
