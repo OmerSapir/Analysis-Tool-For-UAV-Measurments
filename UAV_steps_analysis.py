@@ -197,12 +197,12 @@ class App:
         self.combobox_index = ttk.Combobox(root, state='readonly')
         self.combobox_index.grid(row=1, column=1, padx=10, pady=10)
 
-        self.label_ref_col = tk.Label(root, text="Analysis Column:")
+        self.label_ref_col = tk.Label(root, text="Steps Analysis Column:")
         self.label_ref_col.grid(row=2, column=0, padx=10, pady=10)
         self.combobox_ref_col = ttk.Combobox(root, state='readonly')
         self.combobox_ref_col.grid(row=2, column=1, padx=10, pady=10)
 
-        self.label_stats_col = tk.Label(root, text="X Stats Column:")
+        self.label_stats_col = tk.Label(root, text="Measurment Column:")
         self.label_stats_col.grid(row=3, column=0, padx=10, pady=10)
         self.combobox_stats_col = ttk.Combobox(root, state='readonly')
         self.combobox_stats_col.grid(row=3, column=1, padx=10, pady=10)
@@ -217,7 +217,7 @@ class App:
         self.entry_var_ths = tk.Entry(root)
         self.entry_var_ths.grid(row=5, column=1, padx=10, pady=10)
 
-        self.button_stats = tk.Button(root, text="Select intervals & Plot Statistics", command=self.plot_statistics)
+        self.button_stats = tk.Button(root, text="Select intervals", command=self.plot_statistics)
         self.button_stats.grid(row=7, column=0, columnspan=2, pady=10)
 
     def browse_file(self):

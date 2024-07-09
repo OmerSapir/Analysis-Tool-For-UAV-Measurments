@@ -12,11 +12,26 @@ The goal of this project is to develop a semi-automated system to extract and an
 </p>
 
 ## User Instructions
-1. **Browse and Select CSV File:** Use the GUI to browse and select the CSV file.
-2. **Specify Parameters:** Input the index column, analysis (pressure) column, statistics (measurement) column, steps size, and variance threshold.
-3. **Plot and Select Intervals:** The program will plot the pressure data with suggested intervals. You can select and subtract unwanted intervals.
-4. **Plot Statistics:** After exiting the pressure plot, confirm if you want to plot the statistics for the selected intervals.
-5. **Save Intervals:** After exiting the statistics plot, you can choose to save the selected intervals as a JSON file.
+1. **Browse and Select CSV File:** Use the GUI to browse and select the CSV file containing your measurement data.
+2. **Specify Parameters:**
+   - **Index Column:** Input the column name representing the timestamps.
+   - **Steps Analysis Column:** Input the column name representing the pressure or altitude data.
+   - **Measured Stats Column:** Input the column name for the atmospheric composition parameters to be analyzed.
+   - **Steps Size:** Define the duration for each step in seconds.
+   - **Variance Threshold:** Set the variance threshold for detecting stable intervals (depends on measurment units).
+3. **Plot Suggested Intervals:** Click the "Select Intervals" button. The program will plot the steps data with suggested intervals based on the specified parameters.
+4. **Subtract Intervals:** In the plot, select unwanted intervals by clicking on them. After exiting the plot, confirm if you want to subtract the selected intervals from the data.
+5. **Plot Statistics:** After subtracting the selected intervals, confirm if you want to plot the measurement statistics for the remaining intervals.
+6. **Save Intervals:** After exiting the statistics plot, you can choose to save the selected intervals as a JSON file.
+
+# Usage Example (for 'example_CSV' in 'Data' file):
+Index Column: timestamp
+Steps Analysis Column: hum_pressure
+Measured Stats Column: pom_ozone
+Steps Size: 35
+Variance Threshold: 70
+
+![Download Video Demo](https://github.com/OmerSapir/Analysis-Tool-For-UAV-Measurments/blob/main/Example.mp4)
 
 ## Input
 CSV file containing the following columns:
